@@ -1,0 +1,92 @@
+# -------------------------
+# Odoo / project specifics
+# -------------------------
+_build/
+*.py[co]
+__pycache__/
+*.egg-info
+*~
+*.orig
+status
+odoo/filestore
+odoo/addons/base/maintenance
+/odoo.conf
+install/win32/*.bat
+install/win32/meta.py
+setup/win32/static/less/
+setup/win32/static/wkhtmltopdf/
+setup/win32/static/postgresql*.exe
+node_modules
+jsconfig.json
+tsconfig.json
+package-lock.json
+package.json
+.husky
+/bin/
+/build/
+/dist/
+/include/
+/lib/
+/man/
+/share/
+/src/
+
+# -------------------------
+# Dotfiles — be selective
+# -------------------------
+# DO NOT blanket-ignore all dotfiles; explicitly allow useful ones:
+!.gitignore
+!.gitattributes
+!.github/
+!.mailmap
+!.weblate.json
+
+# Common IDE / OS cruft
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Secrets & credentials
+# -------------------------
+.env
+.env.*
+*.env.*
+*.secret
+secrets.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.p7b
+*.crt
+*.cer
+id_*
+*.keystore
+*.jks
+*.psafe3
+*.kdbx
+
+# DB dumps & logs
+*.sql
+*.sqlite
+*.db
+*.log
+logs/
+*.gz
+*.zip
+*.7z
+
+# -------------------------
+# Build artifacts / caches
+# -------------------------
+coverage/
+.cache/
+.nox/
+.tox/
+pytest_cache/
+pip-wheel-metadata/
+.wheelhouse/
+.mypy_cache/
+.pytype/
